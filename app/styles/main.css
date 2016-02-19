@@ -1,24 +1,41 @@
 body {
-  background: #fafafa;
+  background: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+  color: #adadad;
+  padding: 24px;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
+a {
+  color: #409ADC;
+  text-decoration: none;
 }
 
-.hero-unit h1 {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
+a:hover {
+  color: #2E6C9A;
+  text-decoration: none;
+  -webkit-transition: color 400ms;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 4px;
+  color: #757575;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #adadad;
+}
+
+p {
+  color: #868686;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .browserupgrade {
