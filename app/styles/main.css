@@ -1,9 +1,8 @@
 body {
-  background: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #adadad;
-  padding: 24px;
   font-family: 'Lato', sans-serif;
+  background: #fff;
+  color: #868686;
+  padding: 24px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -14,7 +13,6 @@ a {
 
 a:hover {
   color: #2E6C9A;
-  text-decoration: none;
   -webkit-transition: color 400ms;
 }
 
@@ -28,14 +26,45 @@ h2 {
   font-size: 24px;
   font-weight: 300;
   margin: 0;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
   border-bottom: 1px solid #adadad;
 }
 
 p {
-  color: #868686;
-  font-size: 16px;
+  color: #86868F;
+  font-size: 18px;
   line-height: 24px;
+}
+
+#nyc {
+  position: absolute;
+  width: 80%;
+  z-index: -1;
+}
+
+.building {
+  width: 40px;
+  background-color: #ddd;
+  margin-left: 10px;
+  display: inline-block;
+  float: right;
+}
+
+#nyc .building {
+  height: 0;
+  -webkit-transform: translateY(0);
+}
+
+#nyc.grow .building {
+  height: 100px;
+  -webkit-transform: translateY(-100px);
+  transition: all 400ms;
+}
+
+#nyc.grow {
+  position: absolute;
+  width: 80%;
+  z-index: -1;
 }
 
 .browserupgrade {
